@@ -39,15 +39,31 @@ console.log("------------------");
 // if(true)
 // if(false)
 // if (isJohnOlder)
-if(ageJohn > ageMark)
-{
-     console.log("John ist älter.");   // true
-}
-else
-{
-       console.log("John ist jünger."); // false
-}
+// if(ageJohn > ageMark)
+// {
+//      console.log("John ist älter.");   // true
+// }
+// else
+// {
+//        console.log("John ist jünger."); // false
+// }
 
 /************  Ternäre (ternary) Schreibweise ************/
 // console.log( (isJohnOlder) ? "John is older" : "Mark is older");
 
+
+/************ IF - ELSE IF  ************/
+// mit alternativen Fällen (älter, jünger, gleich alt)
+
+if (isJohnOlder) 
+{
+    console.log("John ist älter.");   // true
+}
+else if (isJohnEqual) 
+{
+    console.log("John ist gleich alt.");   // alt. true
+ }  
+else 
+{
+    console.log("John ist jünger."); // false
+}
