@@ -11,14 +11,49 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 
 const prompt = require('prompt-sync')({sigint: true});
 
-//Geben Sie über eine Prompt-Anforderung eine Zahl ein.
-let number1 = prompt("erste Zahl?: ");
+/*********** Variante 1  ****************/
+// Vorteil: gute Lesbarkeit | aber viele Variablen
 
-//Geben Sie über eine Prompt-Anforderung eine zweite Zahl ein.
-let number2 = prompt("zweite Zahl?: ");
+// let ziffer1, ziffer2, zahl1, zahl2, summe;
 
-//Berechnen Sie die Summe der beiden Zahlen.
-let summe = Number(number1) + Number(number2)
+// ziffer1 = prompt("Bitte Zahl 1 eingeben:");
+// ziffer2 = prompt("Bitte Zahl 2 eingeben:");
 
-//Geben Sie die Summe der Zahlen in die Konsole aus:
-console.log("Die Summe der Zahlen ist: " + summe);
+// console.log("Datentyp: " + typeof ziffer1);
+// console.log("Datentyp: " + typeof ziffer2);
+
+// // Typkonvertierung 1: ziffer --> zahl (mit Nachkomma)
+// zahl1 = parseFloat(ziffer1);
+// zahl2 = parseFloat(ziffer2);
+
+// console.log("Datentyp: " + typeof zahl1);
+// console.log("Datentyp: " + typeof zahl2);
+
+// summe = zahl1 + zahl2;
+
+// console.log("Die Summe der Zahlen ist: " + summe);
+
+/*********** Variante 2  ****************/
+
+// // Kompaktere Lösung
+
+// let zahl1, zahl2, summe;
+
+// zahl1 = parseInt(prompt("Zahl 1: "));
+// zahl2 = parseInt(prompt("Zahl 2: "));
+
+// summe = zahl1 + zahl2;
+
+// console.log("Die Summe der Zahlen ist: " + summe);
+
+/*********** Variante 3  ****************/
+// Kompakt, aber schlechter lesbar, unflexibel
+
+console.log
+(
+    "Die Summe ist: " + 
+   (
+    parseFloat(prompt("Bitte Zahl 1 eingeben")) +
+    parseFloat(prompt("Bitte Zahl 2 eingeben"))
+   ) 
+);
