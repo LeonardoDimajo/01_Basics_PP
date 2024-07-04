@@ -20,25 +20,24 @@ Alter 13-17 // Cola
 const prompt = require('prompt-sync')({sigint: true});
 
 // Alles muss man selber machen lassen! ...
-let name = prompt("Name?: ");
+let firstName = prompt("Name?: ");
 let age = prompt("Alter?: ");
 
 
 
 if (age >= 0 && age <= 5) 
 {
-    console.log(name + " trinkt Milch." );   // true
+    console.log(firstName + " trinkt Milch." );   // true
 }
 else if (age >= 6 && age <= 12) 
 {
-    console.log(name + " trinkt Saft.");   // alt. true
+    console.log(firstName + " trinkt Saft.");   // alt. true
  }  
  else if (age >= 13 && age <= 17) 
 {
-    console.log(name + " trinkt Cola.");   // alt. true
+    console.log(firstName + " trinkt Cola.");   // alt. true
 }  
-
 else 
 {
-    console.log(name + " trinkt Wein."); // false
+    console.log(firstName + " trinkt Wein."); // false
 }
