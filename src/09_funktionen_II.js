@@ -7,13 +7,34 @@
 1. Dateneingabe + -überprüfung :  
 2. Auswahl Rechenart : 
 3. Fkt. Grundrechenarten : 
-4. Ausgabe in Konsole : 
+4. Ausgabe in Konsole : check!
 */
 
 
+// module: addition a + b |  test:
+// output(add(2,2));
+// output(add(2,-2));
+// output(add(2,0));
 
+function add(a,b) {
+	return a + b;
+}
 
+// output(sub(2,2));
+// output(sub(2,-2));
+// output(sub(2,0));
 
+function sub(a,b) {
+	return a - b;
+}
+
+// output(mult(2,2));
+// output(mult(2,-2));
+// output(mult(2,0));
+
+function mult(a,b) {
+	return a * b;
+}
 
 
 

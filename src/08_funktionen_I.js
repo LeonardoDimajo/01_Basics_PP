@@ -83,8 +83,9 @@ output(getString("Max","Mütze"));
 }
 
 // 2. Funktionalität: string output
-// output("hi")
+// output("hi");
 // output(2);
+// output(true);
 function output(outputData) {
     console.log(outputData);
 }
