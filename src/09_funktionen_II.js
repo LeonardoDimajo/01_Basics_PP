@@ -20,6 +20,7 @@ function add(a,b) {
 	return a + b;
 }
 
+// module: subtraction a - b |  test:
 // output(sub(2,2));
 // output(sub(2,-2));
 // output(sub(2,0));
@@ -28,6 +29,8 @@ function sub(a,b) {
 	return a - b;
 }
 
+
+// module: multiplication a * b |  test:
 // output(mult(2,2));
 // output(mult(2,-2));
 // output(mult(2,0));
@@ -36,16 +39,21 @@ function mult(a,b) {
 	return a * b;
 }
 
+
+// module: divison a / b |  test:
+const ERROR_STR_DIV = "Teilen durch 0 nicht möglich";
+
 output(div(2,2));
 output(div(2,-2));
 output(div(2,0));
 
 function div(a,b) {
-	if (b != 0) {
-		return a / b;
-	} else {
-		return "Teilen durch 0 nicht möglich";
+
+	if (b == 0) {
+		return ERROR_STR_DIV; // Ausnahme
+		
 	}
+	return a / b; // Regel
 }
 
 // module: output | test:
