@@ -36,7 +36,17 @@ function mult(a,b) {
 	return a * b;
 }
 
+output(div(2,2));
+output(div(2,-2));
+output(div(2,0));
 
+function div(a,b) {
+	if (b != 0) {
+		return a / b;
+	} else {
+		return "Teilen durch 0 nicht möglich";
+	}
+}
 
 // module: output | test:
 // output("hello");
